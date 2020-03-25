@@ -1,0 +1,53 @@
+// ================= VARIABLES =======================
+// COLORS
+$color-white: #fff;
+$color-black: #292929;
+
+$color-primary-dark: #4f2671;
+$color-primary: #7d44aa;
+$color-primary-light: #a971d6;
+
+$color-grey: #ddd;
+$color-grey-light: #eee;
+$color-grey-dark: #999;
+
+// FONT SIZE
+$default-font-size: 1.6rem;
+
+// SASS BREAKPOINT VARIABLES
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+
+// MIXINS 
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// ================= GLOBAL RESET =======================
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // SETTING TO 10PX
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Monsterrat", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
